@@ -1,8 +1,36 @@
-const arr = new Array(212);
-arr.fill("coming soon");
+window.onload = function () {
+  navbarToggle();
+  navbarLink();
+  tabToggle();
+  cycleGreetings();
+  changeSVGColor("logo-bofa", "#f2f3f4");
+};
 
-const word = document.getElementsByClassName("repeat")[0];
-word.innerHTML = arr.join(" ");
-word.style.color = "#D3D3D3";
-word.style.fontFamily = "Verdana";
-word.style.fontSize = "30px";
+// switches active navbar tab on selection
+navbarToggle = function () {
+  $(function () {
+    var navMain = $(".navbar-collapse");
+    navMain.on("click", "a:not([data-toggle])", null, function () {
+      navMain.collapse("hide");
+    });
+  });
+};
+
+// switches active navbar tab with scroll
+navbarLink = function () {
+  var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+    target: ".navbar",
+  });
+};
+
+// switches active navbar tab for eperience-navbar
+tabToggle = function () {
+  $(".experience a").on("click", function (e) {
+    e.preventDefault();
+    $(this).tab("show");
+  });
+};
+
+colorChange = function () {
+
+};

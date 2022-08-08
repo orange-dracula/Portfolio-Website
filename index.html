@@ -1,22 +1,284 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="icon" href="logo.png" />
-  </head>
-  <body>
-    <div class="repeat" style="position: absolute; top: 0px; left: 0px">
-      coming
-    </div>
-    <img
-      src="logo.png"
-      style="
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        height: 40%;
-      "
-    />
-  </body>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- bootstrap and jQuery links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  <!-- css and js links -->
+  <link rel="stylesheet" href="index.css" />
   <script src="index.js"></script>
+
+  <!-- favicon -->
+  <link rel="icon" type="images/png" href="images/logo.svg" />
+</head>
+
+<body>
+  <!-- navigation bar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+    <div class="nav-blur"></div>
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Rohan Sitapara</a>
+
+      <!-- toggler button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- navigation links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#introduction">Introduction</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- main section -->
+    <div class="main-section">
+      <!-- padding-profile -->
+      <div id="introduction" class="padding-profile"></div>
+
+      <!-- introduction -->
+      <div class="introduction container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 text-center">
+            <!-- profile picture -->
+            <img class="img-fluid" src="images/profile.JPEG" alt="profile" />
+          </div>
+
+          <!-- greeting -->
+          <div class="col-lg-6">
+            <div class="col-lg-12">
+              <h1 class="h1 introduction-element">
+                <span class="introduction-greeting">hi,<br></span>
+                I'm Rohan
+              </h1>
+            </div>
+            <div class="col-lg-12">
+              <!-- about me -->
+              <p class="p introduction-element">
+                I am a cybersecurity analyst at Bank of America based in Charlotte, NC. I graduated from University of
+                North Carolina with a bachelor’s degree in
+                computer science. I am passionate about web
+                development and data science.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- padding 1 -->
+      <div class="padding-1"></div>
+    </div>
+
+    <div class="content-section">
+      <!-- padding 1 -->
+      <div id="skills" class="padding-1"></div>
+
+      <!-- skills -->
+      <div class="skills container">
+        <h2 class="h2">Skills</h2>
+
+        <!-- programming languages -->
+        <div class="skills-categories">
+          <!-- <span class="tab skills-active">Programing Languages</span> -->
+          <span class="tab">HTML</span>
+          <span class="tab">CSS</span>
+          <span class="tab">JavaScript</span>
+          <span class="tab">Python</span>
+        </div>
+
+        <!-- web developer tools -->
+        <div class="skills-categories">
+          <!-- <span class="tab skills-active">Development Tools</span> -->
+          <span class="tab">Visual Studio Code</span>
+          <span class="tab">Bootstrap</span>
+          <span class="tab">jQuery</span>
+          <span class="tab">Git</span>
+        </div>
+
+        <!-- data analysis tools -->
+        <div class="skills-categories">
+          <!-- <span class="tab skills-active">Development Tools</span> -->
+          <span class="tab">PyCharm</span>
+          <span class="tab">NumPy</span>
+          <span class="tab">Pandas</span>
+          <span class="tab">Matlab</span>
+        </div>
+        <!-- foundation concepts -->
+        <div class="skills-categories">
+          <!-- <span class="tab skills-active">Foundational Concepts</span> -->
+          <span class="tab">Agile</span>
+          <span class="tab">Scrum</span>
+        </div>
+      </div>
+
+      <!-- padding 1 -->
+      <div id="experience" class="padding-1"></div>
+
+      <!-- experience -->
+      <div class="experience container">
+        <h2 class="h2">Experience</h2>
+        <div class="flex-row row">
+          <div class="col-lg-12">
+            <div class="content-card-container">
+              <!-- navigation for experience -->
+              <div class="content-card-element">
+                <ul class="experience-navbar nav" id="navbar-experience">
+                  <li>
+                    <a class="tab active" href="#bofa"><embed id="logo-bofa" src="images/bofa.svg" width="23px" /> Bank
+                      of America</a>
+                  </li>
+                  <li>
+                    <a class="tab" href="#uncc"><embed id="logo-uncc" src="images/uncc.svg" width="23px" /> UNC
+                      Charlotte</a>
+                  </li>
+                  <li>
+                    <a class="tab" href="#aplix"><embed id="logo-aplix" src="images/aplix.svg" width="23px" /> Aplix</a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- experience description -->
+              <div class="tab-content content-card-element">
+                <div class="tab-pane active" id="bofa">
+                  <!-- job responsibilites -->
+                  <p class="p">
+                    Reviewed, advised and negotiated client information security requirements according to company
+                    standards to enable business functions. Supported cross-functional efforts to conduct risk analysis
+                    and provide viable solutions through visualization.
+                  </p>
+                </div>
+
+                <div class="tab-pane" id="uncc">
+                  <!-- job responsibilites -->
+                  <p class="p">
+                    Helped instructor with course content and evaluation of students’ academic performance. Proctored
+                    lectures/labs and assisted students in accomplishing learning objectives.
+                  </p>
+                </div>
+
+                <div class="tab-pane" id="aplix">
+                  <!-- job responsibilites -->
+                  <p class="p">
+                    Participated in data mining, statistical analysis, and visualization to communicate findings to
+                    stakeholders. Identified opportunities for improvement within existing software
+                    applications/frameworks and respond to the additional needs of business and engineer colleagues.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- padding 1 -->
+      <div id="projects" class="padding-1"></div>
+
+      <!-- projects -->
+      <div class="projects container">
+        <h2 class="h2">Projects</h2>
+
+        <!-- row 1 -->
+        <div class="flex-row row">
+          <!-- Differential Privacy -->
+          <div class="col-lg-6">
+            <div class="content-card-container">
+              <!-- project heading -->
+              <h3 class="content-card-element h3">Differential Privacy</h3>
+              <div class="project-label-container"><span class="tab project-label-element">Python</span> <span
+                  class="tab project-label-element">Matlab</span></div>
+              <!-- project image -->
+              <div class="content-card-element">
+                <img class="content-card-img" src="images/differential-privacy.svg">
+              </div>
+              <!-- project description -->
+              <p class="content-card-element p">
+                Researched a framework for collecting participants' data with the objectives of privacy, accuracy, and
+                economy. We considered sampling
+                error and the differential privacy error to provide a practical solution for choosing the ε value and
+                the sample size, in order to satisfy the requirements of accuracy and budget.
+              </p>
+              <div class="flex-padding"></div>
+              <div class="content-card-element" id="bottom">
+                <a class="content-card-link" href="https://webpages.charlotte.edu/lfan4/people.html">
+                  Learn More <img src="images/arrow-link.svg" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Finance Junction -->
+          <div class="col-lg-6">
+            <div class="content-card-container">
+              <!-- project heading-->
+              <h3 class="content-card-element h3">Finance Junction</h3>
+              <div class="project-label-container"><span class="tab project-label-element">HTML</span> <span
+                  class="tab project-label-element">CSS</span> <span class="tab project-label-element">JavaScript</span>
+                <span class="tab project-label-element">jQuery</span>
+              </div>
+              <!-- project image -->
+              <div class="content-card-element">
+                <img class="content-card-img" src="images/finance-junction.svg">
+              </div>
+              <!-- project description -->
+              <p class="content-card-element p">
+                Developed a website that educates about basic financial concepts such as credit score, loans, budget
+                etc.
+              </p>
+              <div class="flex-padding"></div>
+              <div class="content-card-element">
+                <a class="content-card-link" href="https://github.com/rsitapara/Finance_Junction-Web">
+                  Learn More <img src="images/arrow-link.svg" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="padding-1"></div>
+    </div>
+  </main>
+</body>
+
+
+<!-- footer -->
+<footer class="footer">
+  <div class="padding-2"></div>
+
+  <!-- links -->
+  <a href="https://www.linkedin.com/in/rohansitapara"><img class="footer-img" src="images/linkedin.svg" /></a>
+  <a href="mailto:me@rohansitapara.com"><img class="footer-img" src="images/email.svg" /></a>
+  <a href="https://github.com/rsitapara/"><img class="footer-img" src="images/github.svg" /></a>
+  <div class="padding-2"></div>
+
+  <!-- copyright -->
+  <p>&copy; 2022 Rohan Sitapara. All rights reserved.</p>
+  <div class="padding-2"></div>
+
+</footer>
+
 </html>
